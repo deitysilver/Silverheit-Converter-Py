@@ -11,11 +11,9 @@ st.write("""
 6. Kelvin to Silverheit
 """)
 
-# Getting user input
 choice = st.selectbox("Select conversion option (1-6):", options=["1", "2", "3", "4", "5", "6"])
 value = st.number_input("Enter temperature value:")
 
-# Perform conversion based on user choice
 if st.button("Convert"):
     if choice == "1":
         result = value * 2.7
